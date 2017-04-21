@@ -1,0 +1,257 @@
+/*!
+ * Copyright 2017 - Mohamed Elzanaty 
+ * Licensed under MIT 
+ */
+* {
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+body {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+  
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to right,#000, #f06b22 ,#000,  #1797d2, #000);
+  background-size: 300% 300%;
+  -webkit-animation: Background 50s ease-in-out infinite;
+  -moz-animation: Background 50s ease-in-out infinite;
+  animation: Background 50s ease-in-out infinite;
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@-webkit-keyframes Background {
+  0% {
+    background-position: 100% 0%;
+  }
+  20% { 
+    background-position: 80% 20%;
+  }
+  40% { 
+    background-position: 60% 40%;
+  }
+  60% {
+    background-position: 40% 60%;
+  }
+  60% {
+    background-position: 20% 80%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@-moz-keyframes Background {
+  0% {
+    background-position: 100% 0%;
+  }
+  20% { 
+    background-position: 80% 20%;
+  }
+  40% { 
+    background-position: 60% 40%;
+  }
+  60% {
+    background-position: 40% 60%;
+  }
+  60% {
+    background-position: 20% 80%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes Background {
+ 0% {
+    background-position: 100% 0%;
+  }
+  20% { 
+    background-position: 80% 20%;
+  }
+  40% { 
+    background-position: 60% 40%;
+  }
+  60% {
+    background-position: 40% 60%;
+  }
+  60% {
+    background-position: 20% 80%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/parallax2.jpg);
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  /*height: 100vh;*/
+}
+  
+
+.button{
+  width:200px;
+  height:50px;
+  border: 3px solid #f06b22;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4em;
+  text-decoration: none;
+  transition: all .5s ease;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  /*margin:0 0 40px 50px;*/
+  margin: 10px auto;
+}
+.button a{
+  font-size:16px;
+  color:#f06b22;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+}
+.eff{
+  width:200px;
+  height:50px;
+  top:-50px; 
+  background:#f06b22;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button:hover .eff{
+  top:0;
+}
+.button:hover a{
+  color:#fff;
+}
+.navbar-default { background: transparent; border: none;}
+img{ width: 100%; height: 100%;}
+.navbar-brand { width: 200px; height: 60px;}
+
+.content{
+  height: 100vh;
+  width: 100vw;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack:center;
+      justify-content:center;
+  -ms-flex-align:center;
+      align-items:center;
+}
+.center {
+  position: relative;
+ top: 50%;
+ transform: translateY(-50%);
+}
+@media screen and (max-width:1242px) {
+  .center{top: 45%;}
+} 
+.meta img { width: 294px; height: 80px; margin-left: -65px;}
+.meta h2 {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  /*text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);*/
+  font-size: 38px;
+  line-height: 55px;
+  margin: 25px 0;
+} 
+.meta p, ul li{ font-size: 18px; color: #f4f4f4; }
+.contents { padding: 15px;}
+.contents h5 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #f06b22;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.contents p { 
+  font-size: 17px;
+  line-height: 27px;
+  color: rgb(21, 42, 68);
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.form-group { margin: 10px 0;}
+.form-group label { display: block; color: rgb(21, 42, 68); font-weight: normal;}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px 0 5px 10px;
+  color: rgb(21, 42, 68);
+  -webkit-text-fill-color: rgb(21, 42, 68);
+  border: 1px solid rgb(198, 209, 223) !important ;
+  background: none rgb(255, 255, 255);
+  font-weight: 400;
+  border-radius: 3px;
+  margin: 0 !important ;
+  margin-top: 5px !important ;
+}
+#mc_embed_signup .mc-field-group { padding: 0;}
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error { padding: 0 !important; margin: 5px 0 0 0  !important;}
+.form-group textarea { resize: none;}
+.form-group input::placeholder { color: rgb(21, 42, 68)}
+.form-group input::-webkit-input-placeholder { color: rgb(21, 42, 68)}
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  body{ height: auto; overflow: scroll;}
+  .center { top: auto; transform: translateY(0%);}
+  .meta img { width: 180px; height: 60px; margin: 0 auto; display: block;}
+.meta h2 {
+  font-size: 26px;
+  line-height: 40px;
+  margin: 20px 0;
+  text-align: center;
+} 
+.meta p { font-size: 15px; text-align: center; }
+.contents { padding: 10px; margin-top: 20px;}
+.contents h5 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.contents p { 
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.form-group { margin: 10px 0;}
+.form-group label {font-size: 80%;}
+.form-group input {
+  padding: 5px 0 5px 10px;
+  font-size: 80%;
+}
+
+}
