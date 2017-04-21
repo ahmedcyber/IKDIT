@@ -814,66 +814,14 @@
       		<link rel="stylesheet" type="text/css" href="css/style.min.css"/>
     	</noscript>
 
+		<script src="js/modernizr.custom.79639.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/jquery.ba-cond.min.js"></script>
+		<script src="js/jquery.slitslider.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script src="js/script.js"></script>
 		<script type="text/javascript">
 			setTimeout(function(){document.getElementById("loadedBody").classList.add('loaded');},1500);
-			function downloadModerOnLoad() {
-
-				var moder = document.createElement('script');
-				moder.src= "js/modernizr.custom.79639.js";
-				moder.type = "text/javascript"
-				document.body.appendChild(moder);
-			}
-			function downloadJQAtOnload() {
-
-				var element = document.createElement("script");
-				element.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js";
-				element.type = "text/javascript"
-				document.body.appendChild(element);
-			}
-			function downloadJQSliderBaCondAtOnload() {
-
-				var JQSlider = document.createElement("script");
-				JQSlider.src = "js/jquery.ba-cond.min.js";
-				JQSlider.type = "text/javascript"
-				document.body.appendChild(JQSlider);
-			}
-			function downloadJQSlitSliderAtOnload() {
-
-				var SlitSlider = document.createElement("script");
-				SlitSlider.src = "js/jquery.slitslider.js";
-				SlitSlider.type = "text/javascript"
-				document.body.appendChild(SlitSlider);
-			}
-			function downloadWowAtOnload() {
-
-				var wow = document.createElement("script");
-				wow.src = "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js";
-				wow.type = "text/javascript"
-				document.body.appendChild(wow);
-			}
-			function downloadMainScriptAtOnload() {
-
-				var mainScript = document.createElement("script");
-				mainScript.src = "js/script.js";
-				mainScript.type = "text/javascript"
-				document.body.appendChild(mainScript);
-			}
-			function downloadJSAtOnload() {
-
-				downloadModerOnLoad();
-				downloadJQAtOnload();
-				downloadJQSliderBaCondAtOnload();
-				downloadJQSlitSliderAtOnload();
-				downloadWowAtOnload();
-				downloadMainScriptAtOnload();
-			}
-
-			if (window.addEventListener)
-				window.addEventListener("load", downloadJSAtOnload, false);
-			else if (window.attachEvent)
-				window.attachEvent("onload", downloadJSAtOnload);
-			else window.onload = downloadJSAtOnload;
-
 			var loadDeferredStyles = function() {
 			var addStylesNode = document.getElementById("deferred-styles");
 			var replacement = document.createElement("div");
