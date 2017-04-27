@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <title>Integrated Knowledge Dynamics || Web Development - Software Solutions | Innovation </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="author" content="Mohamed Elzanaty" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main-style.css">
+	<style>
+    .preloader {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				z-index: 100000;
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: center;
+				align-items: center;
+				background: none repeat scroll 0 0 #fff;
+			}
+
+			.loader {
+			position: relative;
+			width: 44px;
+			height: 8px;
+			margin: 12px auto;
+			}
+
+			.dot {
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			border-radius: 4px;
+			background: #ccc;
+			position: absolute;
+			}
+
+			.dot_1 {
+			animation: animateDot1 1.5s linear infinite;
+			left: 12px;
+			background: #f06b22;
+			}
+
+			.dot_2 {
+			animation: animateDot2 1.5s linear infinite;
+			animation-delay: 0.5s;
+			left: 24px;
+			}
+
+			.dot_3 {
+			animation: animateDot3 1.5s linear infinite;
+			left: 12px;
+			}
+
+			.dot_4 {
+			animation: animateDot4 1.5s linear infinite;
+			animation-delay: 0.5s;
+			left: 24px;
+			}
+
+			@keyframes animateDot1 {
+			0% {
+				transform: rotate(0deg) translateX(-12px);
+			}
+			25% {
+				transform: rotate(180deg) translateX(-12px);
+			}
+			75% {
+				transform: rotate(180deg) translateX(-12px);
+			}
+			100% {
+				transform: rotate(360deg) translateX(-12px);
+			}
+			}
+			@keyframes animateDot2 {
+			0% {
+				transform: rotate(0deg) translateX(-12px);
+			}
+			25% {
+				transform: rotate(-180deg) translateX(-12px);
+			}
+			75% {
+				transform: rotate(-180deg) translateX(-12px);
+			}
+			100% {
+				transform: rotate(-360deg) translateX(-12px);
+			}
+			}
+			@keyframes animateDot3 {
+			0% {
+				transform: rotate(0deg) translateX(12px);
+			}
+			25% {
+				transform: rotate(180deg) translateX(12px);
+			}
+			75% {
+				transform: rotate(180deg) translateX(12px);
+			}
+			100% {
+				transform: rotate(360deg) translateX(12px);
+			}
+			}
+			@keyframes animateDot4 {
+			0% {
+				transform: rotate(0deg) translateX(12px);
+			}
+			25% {
+				transform: rotate(-180deg) translateX(12px);
+			}
+			75% {
+				transform: rotate(-180deg) translateX(12px);
+			}
+			100% {
+				transform: rotate(-360deg) translateX(12px);
+			}
+			}
+      .page-wrapper.visible { display: block;}
+  </style>
+</head>
+<body >
+
+
+<!-- Preloader section
+================================================== -->
+<div class="preloader">
+			<div class="loader">
+				<span class="dot dot_1"></span>
+				<span class="dot dot_2"></span>
+				<span class="dot dot_3"></span>
+				<span class="dot dot_4"></span>
+			</div>
+</div>
+
+  <!--Header-->
+<header class="header">
+        
+
+			<nav class="menu">
+				
+				<div class="menu__brand">
+					<a href=""><div class="logo-menu">
+						<img class="logo" src="images/logo-grey.svg" alt="Integrated Knowledge Dynamics logo" data-aos="fade-up" data-aos-duration="2000" >
+					</div></a>
+				</div>
+
+				<ul class="menu__list">
+					<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="who.html" class="menu__link">Who We Are ?!</a></li>
+					<li class="menu__item"><a href="what.html" class="menu__link">What We Do ?!</a></li>
+					<li class="menu__item"><a href="why.html" class="menu__link">Why Us ?!</a></li>
+					<li class="menu__item"><a href="contactus.html" class="menu__link">Contact Us ?!</a></li>
+				</ul>
+			</nav>
+</header>
+<!-- Navigation section
+================================================== -->
+<div class="nav-container">
+   <nav class="nav-inner transparent">
+
+      <div class="navbar">
+         <div class="container">
+            <div class="row">
+				<div class="navigation-container">
+              <div class="brand">
+                <a href="index.html"><div>
+						<img class="main-logo" src="images/logo-grey.svg" alt="Integrated Knowledge Dynamics logo" data-aos="fade-up" data-aos-duration="2000" >
+					</div></a>
+              </div>
+
+              <div class="burger">
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+              </div>
+			  </div>
+            </div>
+         </div>
+      </div>
+
+   </nav>
+</div>
+
+<!-- Header section
+================================================== -->
+<section id="header" class="header-five">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+          <div class="header-thumb">
+               <h1 class="wow fadeIn" data-wow-delay="0.6s">Contact Us</h1>
+				<h3 class="wow fadeInUp" data-wow-delay="0.9s">Vestibulum at aliquam lorem</h3>
+			  <span class="line"></span>
+          </div>
+			</div>
+
+		</div>
+	</div>		
+</section>
+
+<!-- Contact section
+================================================== -->
+<section id="contact">
+   <div class="container">
+      <div class="row">
+
+         <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="1.3s">
+         	<div class="google_map">
+				<div id="map-canvas">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.5988802080437!2d31.30557315095377!3d30.077030281781518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fcaa8b76905%3A0x33fcd622dba92427!2sIntegrated+Knowlage+Dynamics!5e0!3m2!1sen!2seg!4v1493310961141" width=100% height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="1.6s">
+			<h1>Let's work together!</h1>
+			<div class="contact-form">
+				<form id="contact-form" method="post" action="#">
+					<input name="name" type="text" class="form-control" placeholder="Your Name" required>
+					<input name="email" type="email" class="form-control" placeholder="Your Email" required>
+					<textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
+					<div class="contact-submit">
+						<input type="submit" class="form-control submit" value="Send a message">
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+			<div class="col-md-4 col-sm-4">
+				<div class="wow fadeInUp media" data-wow-delay="0.3s">
+					<div class="media-object pull-left">
+						<i class="fa fa-tablet"></i>
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading"> <i class="fa fa-phone"></i> Phone</h3>
+						<p>+02-01005550395</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-4">
+				<div class="wow fadeInUp media" data-wow-delay="0.6s">
+					<div class="media-object pull-left">
+						<i class="fa fa-envelope"></i>
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading"> <i class="fa fa-envelope"></i>  Email</h3>
+						<p><a href="mailto:mkholief@ikdynamics.com">mkholief@ikdynamics.com</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-4">
+				<div class="wow fadeInUp media" data-wow-delay="0.9s">
+					<div class="media-object pull-left">
+						<i class="fa fa-globe"></i>
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading"> <i class="fa fa-map-marker"></i> Address</h3>
+						<p>18A Obour Buildings, Salah Salem, <br>Cairo, Egypt</p>
+					</div>
+				</div>
+			</div>
+
+      </div>
+   </div>
+</section>
+
+<!-- Footer section
+================================================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<p class="wow fadeInUp"  data-wow-delay="0.3s">Copyright © 2017 Integrated Knowledge Dynamics</p>
+				<ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
+					<li><a href="https://www.facebook.com/mznznTEST/" class="fa fa-facebook"></a></li>
+					<li><a href="https://www.linkedin.com/company-beta/423999/" class="fa fa-linkedin"></a></li>
+					<li><a href="https://twitter.com/ikdynamics" class="fa fa-twitter"></a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+<!-- Javascript 
+================================================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
